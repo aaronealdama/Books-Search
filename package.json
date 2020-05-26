@@ -1,0 +1,34 @@
+{
+  "name": "books-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "start": "concurrently \"cd client && npm run start\" \"cd server && npm run start\"",
+    "start:development": "concurrently \"npm run client\" \"npm run server\"",
+    "start:production": "npm run server",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "client": "cd client && npm run start",
+    "server": "cd server && npm run start",
+    "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\"",
+    "delete": "cd server && cd scripts && node remove.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronealdama/Books-Search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronealdama/Books-Search/issues"
+  },
+  "homepage": "https://github.com/aaronealdama/Books-Search#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "per-env": "^1.0.2"
+  }
+}
