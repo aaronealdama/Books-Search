@@ -1,0 +1,37 @@
+.Book-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Book-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.Book-img {
+    width: 400px;
+    height: 500px;
+}
+
+.Book {
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    transition: all 0.2s;
+    height: 630px;
+}
+
+.Book:hover {
+    box-shadow: 0 0 12px blue;
+}
+
+.Book-para {
+    width: 600px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+.Book-btnGroup {
+    margin-left: 60px;
+}
