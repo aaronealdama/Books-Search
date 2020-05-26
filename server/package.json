@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "engines": {
-    "node": "10.x"
-  },
   "scripts": {
-    "start": "node server.js",
+    "start": "per-env",
     "start-development": "nodemon server.js --exec babel-node",
     "start-production": "node build/server.js",
     "build": "babel server.js -d build -s",
     "seed": "cd seed && node seed.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^2.0.3"
   },
   "author": "",
   "license": "ISC",
